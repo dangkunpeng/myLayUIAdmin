@@ -1,0 +1,89 @@
+urement units''.",
+            "tags": [
+                "L_Other",
+                "L_OneNoteOptions",
+                "L_MicrosoftOfficeOneNote"
+            ],
+            "application": "onent16",
+            "key": "software\\microsoft\\office\\16.0\\onenote\\options\\other"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Other"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "enabledValue": {
+                "decimal": {
+                    "value": 1
+                }
+            },
+            "disabledValue": {
+                "decimal": {
+                    "value": 0
+                }
+            },
+            "name": "L_AddOneNoteicontonotificationarea",
+            "displayName": "Add OneNote icon to notification area",
+            "explainText":"Checks/Unchecks the option ''Place OneNote icon in the notification area of the taskbar''.",
+            "tags": [
+                "L_Other",
+                "L_OneNoteOptions",
+                "L_MicrosoftOfficeOneNote"
+            ],
+            "application": "onent16",
+            "key": "software\\microsoft\\office\\16.0\\onenote\\options\\other",
+            "valueName": "runsystemtrayapp"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Other"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "enabledValue": {
+                "decimal": {
+                    "value": 0
+                }
+            },
+            "disabledValue": {
+                "decimal": {
+                    "value": 1
+                }
+            },
+            "name": "L_NotebookPresence",
+            "displayName": "Notebook Presence",
+            "explainText": "This policy setting enables or disables the Notebook Presence feature in OneNote, which broadcasts user presence within a notebook and enables real-time synchronization for users who are editing the same page. Note:  Any change to this policy does not take effect until OneNote is restarted.\n\nIf you enable or do not configure this policy setting, users are notified when they are editing the same page in a notebook as another user. OneNote also enters real-time sync when it discovers multiple users editing the same page.\n\nIf you disable this policy setting, users are not notified when they are editing the same page in a notebook as another user. OneNote does not enter real-time sync when multiple users are editing the same page.",
+            "tags": [
+                "L_Other",
+                "L_OneNoteOptions",
+                "L_MicrosoftOfficeOneNote"
+            ],
+            "application": "onent16",
+            "key": "software\\microsoft\\office\\16.0\\onenote\\options",
+            "valueName": "disablepresence"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Other"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "elements": {
+                "items": [
+                    {
+                        "valueName": "insertedfilesdisallowembeddingsizethreshold",
+                        "minValue": 10485760,
+                        "minValueSpecified": true,
+                        "maxValue": 2147483648,
+                        "maxValueSpecified": true,
+                        "inputType": "decimalTextBox",
+                        "id": "L_EmbeddedFileSizeLimit"
+                    }
+                ]
+            },
+            "name": "L_SpecifyEmbeddedFileSizeLimit",
+            "displayName": "Embedded File Size Limit"

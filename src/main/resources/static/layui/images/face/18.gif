@@ -1,0 +1,77 @@
+},
+            "elements": {
+                "items": [
+                    {
+                        "valueName": "backupfolderpath",
+                        "requiredSpecified": false,
+                        "expandableSpecified": false,
+                        "maxLengthSpecified": false,
+                        "inputType": "textBox",
+                        "caption": "Backup Folder:",
+                        "id": "L_BackupFolder"
+                    }
+                ]
+            },
+            "name": "L_LocationofBackupFolder",
+            "displayName": "Location of Backup Folder",
+            "explainText": "Sets the value in the corresponding UI option.",
+            "tags": [
+                "L_Save",
+                "L_OneNoteOptions",
+                "L_MicrosoftOfficeOneNote"
+            ],
+            "application": "onent16",
+            "key": "software\\microsoft\\office\\16.0\\onenote\\options\\paths"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Save"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "elements": {
+                "items": [
+                    {
+                        "valueName": "percentfreespacebeforeoptimize",
+                        "minValue": 0,
+                        "minValueSpecified": true,
+                        "maxValue": 100,
+                        "maxValueSpecified": true,
+                        "inputType": "decimalTextBox",
+                        "caption": "Enter Percentage:",
+                        "id": "L_EnterPercentage"
+                    }
+                ]
+            },
+            "name": "L_Percentageofunuseddiskspacetoallowinsections",
+            "displayName": "Percentage of unused disk space to allow in sections",
+            "explainText":"Sets the value in the option ''Percentage of unused space to allow in sections without optimizing''.",
+            "tags": [
+                "L_Save",
+                "L_OneNoteOptions",
+                "L_MicrosoftOfficeOneNote"
+            ],
+            "application": "onent16",
+            "key": "software\\microsoft\\office\\16.0\\onenote\\options\\save"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Password"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "enabledValue": {
+                "decimal": {
+                    "value": 0
+                }
+            },
+            "disabledValue": {
+                "decimal": {
+                    "value": 1
+                }
+            },
+            "name": "L_Disallowsaddonsaccesstopass",
+            "displayName": "Disallows add-ons access to password protected sections",
+            "explainText": "This option disallows extensibility add-ons the ability to access password protected sections if they are u

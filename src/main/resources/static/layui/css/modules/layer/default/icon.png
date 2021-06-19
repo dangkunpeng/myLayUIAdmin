@@ -1,0 +1,284 @@
+   "L_OutlookOptions",
+                "L_MicrosoftOfficeOutlook"
+            ],
+            "application": "outlk16",
+            "key": "software\\microsoft\\office\\16.0\\outlook\\options\\calendar",
+            "valueName": "disablemeetingregeneration"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Calendaroptions"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "enabledValue": {
+                "decimal": {
+                    "value": 1
+                }
+            },
+            "disabledValue": {
+                "decimal": {
+                    "value": 0
+                }
+            },
+            "name": "L_RemindersonCalendaritems",
+            "displayName": "Do not display reminders on Calendar items by default",
+            "explainText": "By default, when users create Calendar items, the Reminder: check box in the item is set. By disabling this setting, you can change the default behavior so that the Reminder: check box is cleared by default .",
+            "tags": [
+                "L_Calendaroptions",
+                "L_Preferences",
+                "L_OutlookOptions",
+                "L_MicrosoftOfficeOutlook"
+            ],
+            "application": "outlk16",
+            "key": "software\\microsoft\\office\\16.0\\outlook\\preferences",
+            "valueName": "apptreminders"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Calendaroptions"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "elements": {
+                "items": [
+                    {
+                        "valueName": "reminddefault",
+                        "minValue": 0,
+                        "minValueSpecified": true,
+                        "maxValue": 2880,
+                        "maxValueSpecified": true,
+                        "inputType": "decimalTextBox",
+                        "caption": "Show reminders <x> minutes before the event starts:",
+                        "id": "L_Showremindersxminutesbeforetheeventstarts"
+                    }
+                ]
+            },
+            "name": "L_Calendaritemdefaults",
+            "displayName": "Calendar item defaults",
+            "explainText": "Sets the value in the option \"Default reminder\".",
+            "tags": [
+                "L_Calendaroptions",
+                "L_Preferences",
+                "L_OutlookOptions",
+                "L_MicrosoftOfficeOutlook"
+            ],
+            "application": "outlk16",
+            "key": "software\\microsoft\\office\\16.0\\outlook\\options\\calendar"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Calendaroptions"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "elements": {
+                "items": [
+                    {
+                        "item": [
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 124
+                                    }
+                                },
+                                "displayName": "Monday to Friday"
+                            },
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 120
+                                    }
+                                },
+                                "displayName": "Monday to Thursday"
+                            },
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 60
+                                    }
+                                },
+                                "displayName": "Tuesday to Friday"
+                            },
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 126
+                                    }
+                                },
+                                "displayName": "Monday to Saturday"
+                            },
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 30
+                                    }
+                                },
+                                "displayName": "Wednesday to Saturday"
+                            },
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 142
+                                    }
+                                },
+                                "displayName": "Thursday to Sunday"
+                            },
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 252
+                                    }
+                                },
+                                "displayName": "Sunday to Friday"
+                            },
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 254
+                                    }
+                                },
+                                "displayName": "All seven days"
+                            }
+                        ],
+                        "valueName": "workday",
+                        "inputType": "dropdownList",
+                        "caption": "Length of work week:",
+                        "id": "L_Lengthofworkweek"
+                    }
+                ]
+            },
+            "name": "L_Workweek",
+            "displayName": "Work week",
+            "explainText": "Sets the value in the option \"Calendar work week\".",
+            "tags": [
+                "L_Calendaroptions",
+                "L_Preferences",
+                "L_OutlookOptions",
+                "L_MicrosoftOfficeOutlook"
+            ],
+            "application": "outlk16",
+            "key": "software\\microsoft\\office\\16.0\\outlook\\options\\calendar"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Calendaroptions"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "elements": {
+                "items": [
+                    {
+                        "item": [
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 0
+                                    }
+                                },
+                                "displayName": "Sunday"
+                            },
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 1
+                                    }
+                                },
+                                "displayName": "Monday"
+                            },
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 2
+                                    }
+                                },
+                                "displayName": "Tuesday"
+                            },
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 3
+                                    }
+                                },
+                                "displayName": "Wednesday"
+                            },
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 4
+                                    }
+                                },
+                                "displayName": "Thursday"
+                            },
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 5
+                                    }
+                                },
+                                "displayName": "Friday"
+                            },
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 6
+                                    }
+                                },
+                                "displayName": "Saturday"
+                            }
+                        ],
+                        "valueName": "firstdow",
+                        "inputType": "dropdownList",
+                        "caption": "Choose the first day of the week:",
+                        "id": "L_Choosethefirstdayoftheweek"
+                    }
+                ]
+            },
+            "name": "L_Firstdayoftheweek",
+            "displayName": "First day of the week",
+            "explainText": "Sets the value in the corresponding UI option.",
+            "tags": [
+                "L_Calendaroptions",
+                "L_Preferences",
+                "L_OutlookOptions",
+                "L_MicrosoftOfficeOutlook"
+            ],
+            "application": "outlk16",
+            "key": "software\\microsoft\\office\\16.0\\outlook\\options\\calendar"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Calendaroptions"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "elements": {
+                "items": [
+                    {
+                        "item": [
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 0
+                                    }
+                                },
+                                "displayName": "Starts on Jan. 1"
+                            },
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 2
+                                    }
+                                },
+                                "displayName": "First full week"
+                            },
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 1
+                                    }

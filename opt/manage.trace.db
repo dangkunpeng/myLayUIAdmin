@@ -1,0 +1,48 @@
+2021-06-11 16:45:05 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'2018-11-21 15:54:07' (BASE_ADMIN_ROLE: ROLE_STATUS INTEGER)"; SQL statement:
+INSERT INTO `base_admin_role` VALUES (1, '系统管理员', '系统管理员', '1,9', '2018-11-21 15:54:07', '2018-11-21 15:54:07', 1) -- (1, STRINGDECODE('\u7cfb\u7edf\u7ba1\u7406\u5458'), STRINGDECODE('\u7cfb\u7edf\u7ba1\u7406\u5458'), '1,9', '2018-11-21 15:54:07', '2018-11-21 15:54:07', 1) [22018-197]
+2021-06-11 16:45:05 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'2018-12-03 19:09:57' (BASE_ADMIN_ROLE: ROLE_STATUS INTEGER)"; SQL statement:
+INSERT INTO `base_admin_role` VALUES (2, '普通管理员', '普通管理员', '9', '2018-11-21 15:11:44', '2018-12-03 19:09:57', 1) -- (2, STRINGDECODE('\u666e\u901a\u7ba1\u7406\u5458'), STRINGDECODE('\u666e\u901a\u7ba1\u7406\u5458'), '9', '2018-11-21 15:11:44', '2018-12-03 19:09:57', 1) [22018-197]
+2021-06-11 16:45:34 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'2018-11-21 15:54:07' (BASE_ADMIN_ROLE: ROLE_STATUS INTEGER)"; SQL statement:
+INSERT INTO `base_admin_role` VALUES ('1', '系统管理员', '系统管理员', '1,9', '2018-11-21 15:54:07', '2018-11-21 15:54:07', 1) -- ('1', STRINGDECODE('\u7cfb\u7edf\u7ba1\u7406\u5458'), STRINGDECODE('\u7cfb\u7edf\u7ba1\u7406\u5458'), '1,9', '2018-11-21 15:54:07', '2018-11-21 15:54:07', 1) [22018-197]
+2021-06-11 16:45:34 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'2018-12-03 19:09:57' (BASE_ADMIN_ROLE: ROLE_STATUS INTEGER)"; SQL statement:
+INSERT INTO `base_admin_role` VALUES ('2', '普通管理员', '普通管理员', '9', '2018-11-21 15:11:44', '2018-12-03 19:09:57', 1) -- ('2', STRINGDECODE('\u666e\u901a\u7ba1\u7406\u5458'), STRINGDECODE('\u666e\u901a\u7ba1\u7406\u5458'), '9', '2018-11-21 15:11:44', '2018-12-03 19:09:57', 1) [22018-197]
+2021-06-11 16:45:36 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'2018-11-21 15:54:07' (BASE_ADMIN_ROLE: ROLE_STATUS INTEGER)"; SQL statement:
+INSERT INTO `base_admin_role` VALUES ('1', '系统管理员', '系统管理员', '1,9', '2018-11-21 15:54:07', '2018-11-21 15:54:07', 1) -- ('1', STRINGDECODE('\u7cfb\u7edf\u7ba1\u7406\u5458'), STRINGDECODE('\u7cfb\u7edf\u7ba1\u7406\u5458'), '1,9', '2018-11-21 15:54:07', '2018-11-21 15:54:07', 1) [22018-197]
+2021-06-11 16:45:36 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'2018-12-03 19:09:57' (BASE_ADMIN_ROLE: ROLE_STATUS INTEGER)"; SQL statement:
+INSERT INTO `base_admin_role` VALUES ('2', '普通管理员', '普通管理员', '9', '2018-11-21 15:11:44', '2018-12-03 19:09:57', 1) -- ('2', STRINGDECODE('\u666e\u901a\u7ba1\u7406\u5458'), STRINGDECODE('\u666e\u901a\u7ba1\u7406\u5458'), '9', '2018-11-21 15:11:44', '2018-12-03 19:09:57', 1) [22018-197]
+2021-06-11 18:00:49 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT
+        BASEADMINU0_.ID AS ID1_2_,
+        BASEADMINU0_.REG_TIME AS REG_TIME2_2_,
+        BASEADMINU0_.ROLE_ID AS ROLE_ID3_2_,
+        BASEADMINU0_.SYS_USER_NAME AS SYS_USER4_2_,
+        BASEADMINU0_.SYS_USER_PWD AS SYS_USER5_2_,
+        BASEADMINU0_.USER_PHONE AS USER_PHO6_2_,
+        BASEADMINU0_.USER_STATUS AS USER_STA7_2_ 
+    FROM
+        BASE_ADMIN_USER BASEADMINU0_ 
+    WHERE
+                                              
+                                         1 [*]"; expected "NOT, EXISTS, INTERSECTS"; SQL statement:
+select
+        baseadminu0_.id as id1_2_,
+        baseadminu0_.reg_time as reg_time2_2_,
+        baseadminu0_.role_id as role_id3_2_,
+        baseadminu0_.sys_user_name as sys_user4_2_,
+        baseadminu0_.sys_user_pwd as sys_user5_2_,
+        baseadminu0_.user_phone as user_pho6_2_,
+        baseadminu0_.user_status as user_sta7_2_ 
+    from
+        base_admin_user baseadminu0_ 
+    where
+        -- baseadminu0_.sys_user_name='admin' 
+        --  and baseadminu0_.user_status=1 [42001-197]
+2021-06-16 15:02:03 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "null"; SQL statement:
+SELECT * FROM BASE_ADMIN_PERMISSION where pid=0 [22018-197]

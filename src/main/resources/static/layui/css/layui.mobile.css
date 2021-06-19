@@ -1,0 +1,180 @@
+neSharing",
+                "L_Calendaroptions",
+                "L_Preferences",
+                "L_OutlookOptions",
+                "L_MicrosoftOfficeOutlook"
+            ],
+            "application": "outlk16",
+            "key": "software\\microsoft\\office\\16.0\\outlook\\options\\pubcal",
+            "valueName": "disabledav"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_MicrosoftOfficeOnlineSharing"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "elements": {
+                "items": [
+                    {
+                        "valueName": "davserverpath",
+                        "requiredSpecified": false,
+                        "expandableSpecified": false,
+                        "maxLengthSpecified": false,
+                        "inputType": "textBox",
+                        "caption": "",
+                        "id": "L_Empty"
+                    }
+                ]
+            },
+            "name": "L_PathtoDAVserver",
+            "displayName": "Path to DAV server",
+            "explainText": "This setting allows you to define the path to a DAV server that should be used when users publish their calendars via DAV.",
+            "tags": [
+                "L_MicrosoftOfficeOnlineSharing",
+                "L_Calendaroptions",
+                "L_Preferences",
+                "L_OutlookOptions",
+                "L_MicrosoftOfficeOutlook"
+            ],
+            "application": "outlk16",
+            "key": "software\\microsoft\\office\\16.0\\outlook\\options\\pubcal"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_MicrosoftOfficeOnlineSharing"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "elements": {
+                "items": [
+                    {
+                        "item": [
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 0
+                                    }
+                                },
+                                "displayName": "All options are available"
+                            },
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 8192
+                                    }
+                                },
+                                "displayName":"Disables 'Full details'"
+                            },
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 16384
+                                    }
+                                },
+                                "displayName":"Disables 'Full details' and 'Limited details'"
+                            }
+                        ],
+                        "valueName": "publishcalendardetailspolicy",
+                        "inputType": "dropdownList",
+                        "id": "L_empty4"
+                    }
+                ]
+            },
+            "name": "L_Restrictlevelofcalendardetails",
+            "displayName": "Restrict level of calendar details users can publish",
+            "explainText":"This policy setting controls the level of calendar details that Outlook users can publish to the Microsoft Outlook Calendar Sharing Service.\n\nIf you enable this policy setting, you can choose from three levels of detail: \n\n* All options are available - This level of detail is the default configuration.\n* Disables 'Full details' \n* Disables 'Full details' and 'Limited details' \n\nIf you disable or do not configure this policy setting, Outlook users can share their calendars with selected others by publishing them to the Microsoft Outlook Calendar Sharing Service. Users can choose from three levels of detail: \n\n* Availability only - Authorized visitors will see the user's time marked as Free, Busy, Tentative, or Out of Office, but will not be able to see the subjects or details of calendar items.\n* Limited details - Authorized visitors can see the user's availability and the subjects of calendar items only. They will not be able to view the details of calendar items. Optionally, users can allow visitors to see the existence of private items.\n* Full details - Authorized visitors can see the full details of calendar items. Optionally, users can allow visitors to see the existence of private items.",
+            "tags": [
+                "L_MicrosoftOfficeOnlineSharing",
+                "L_Calendaroptions",
+                "L_Preferences",
+                "L_OutlookOptions",
+                "L_MicrosoftOfficeOutlook"
+            ],
+            "application": "outlk16",
+            "key": "software\\microsoft\\office\\16.0\\outlook\\options\\pubcal"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_MicrosoftOfficeOnlineSharing"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "enabledValue": {
+                "decimal": {
+                    "value": 1
+                }
+            },
+            "disabledValue": {
+                "decimal": {
+                    "value": 0
+                }
+            },
+            "name": "L_Accesstopublishedcalendars",
+            "displayName": "Access to published calendars",
+            "explainText": "This policy setting determines what restrictions apply to users who publish their calendars on Office.com or third-party World Wide Web Distributed Authoring and Versioning (WebDAV) servers.\n\nIf you enable or disable this policy setting, calendars that are published on Office.com must have restricted access (users other than the calendar owner/publisher who wish to view the calendar can only do so if they receive invitations from the calendar owner), and users cannot publish their calendars to third-party DAV servers.\n\nIf you do not configure this policy setting, users can share their calendars with others by publishing them to the Office.com Calendar Sharing Services and to a server that supports the World Wide Web Distributed Authoring and Versioning (WebDAV) protocol. Office.com allows users to choose whether to restrict access to their calendars to people they invite, or allow unrestricted access to anyone who knows the URL to reach the calendar. DAV access restrictions can only be achieved through server and folder permissions, and might require the assistance of a server administrator to set up and maintain.",
+            "tags": [
+                "L_MicrosoftOfficeOnlineSharing",
+                "L_Calendaroptions",
+                "L_Preferences",
+                "L_OutlookOptions",
+                "L_MicrosoftOfficeOutlook"
+            ],
+            "application": "outlk16",
+            "key": "software\\microsoft\\office\\16.0\\outlook\\options\\pubcal",
+            "valueName": "restrictedaccessonly"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_MicrosoftOfficeOnlineSharing"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "enabledValue": {
+                "decimal": {
+                    "value": 1
+                }
+            },
+            "disabledValue": {
+                "decimal": {
+                    "value": 0
+                }
+            },
+            "name": "L_Restrictuploadmethod",
+            "displayName": "Restrict upload method",
+            "explainText": "This policy setting controls whether Outlook can automatically upload calendar updates to Office.com.\n\nIf you enable this policy setting, Outlook enforces the  \"Single Upload: Updates will not be uploaded from the Published Calendar Settings dialog\" option, and calendar updates are not uploaded. Users will not be able to change this setting.\n\nIf you disable this policy setting Outlook automatically publishes calendar updates to Office.com at regular intervals and users will not be able to change this.\n\nIf you do not configure this policy setting, when users publish their calendar to Office.com using the Microsoft Outlook Calendar Sharing Service, Outlook updates the calendars online at regular intervals unless they click \"Advanced\" and select \"Single Upload: Updates will not be uploaded from the Published Calendar Settings dialog\".",
+            "tags": [
+                "L_MicrosoftOfficeOnlineSharing",
+                "L_Calendaroptions",
+                "L_Preferences",
+                "L_OutlookOptions",
+                "L_MicrosoftOfficeOutlook"
+            ],
+            "application": "outlk16",
+            "key": "software\\microsoft\\office\\16.0\\outlook\\options\\pubcal",
+            "valueName": "singleuploadonly"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_MicrosoftOfficeOnlineSharing"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "enabledValue": {
+                "decimal": {
+                    "value": 1
+                }
+            },
+            "disabledValue": {
+                "decimal": {
+                    "value": 0
+                }
+            },
+            "name": "L_Publishinterval",
+            "displayName": "Publish interval",
+            "explainText": "By default, Outlook does not publish calendars to Office.com more often then the publish interval set 

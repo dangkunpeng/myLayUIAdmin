@@ -1,0 +1,97 @@
+                     "id": "L_empty11"
+                    }
+                ]
+            },
+            "name": "L_OneNoteSpellingOptions",
+            "displayName": "OneNote Spelling Options",
+            "explainText": "These options change the \"When correcting spelling in OneNote\" options that appear in the File tab | Option | Proofing dialog box.",
+            "tags": [
+                "L_Spelling",
+                "L_OneNoteOptions",
+                "L_MicrosoftOfficeOneNote"
+            ],
+            "application": "onent16",
+            "key": "software\\microsoft\\shared tools\\proofing tools\\1.0\\office"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_VersionsAndRecyleBin"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "enabledValue": {
+                "decimal": {
+                    "value": 0
+                }
+            },
+            "disabledValue": {
+                "decimal": {
+                    "value": 1
+                }
+            },
+            "name": "L_TurnOffVersionsAndNotebookRecycleBinInSharedNotebooks",
+            "displayName": "Turn off Versions and Notebook Recycle Bin in shared notebooks",
+            "explainText": "This policy setting allows you to turn off version history which includes versions and the notebook recycle bin. With a 2016 format notebook, OneNote will automatically store previous versions of the pages in the notebook, and it will also store a recycle bin for all of the deleted pages and sections.\n\nIf you enable this policy setting, it will turn off version history.\n\nIf you disable or do not configure this policy setting, OneNote will store previous versions by default.",
+            "tags": [
+                "L_VersionsAndRecyleBin",
+                "L_OneNoteOptions",
+                "L_MicrosoftOfficeOneNote"
+            ],
+            "application": "onent16",
+            "key": "software\\microsoft\\office\\16.0\\onenote\\options\\versions",
+            "valueName": "enablehistory"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_VersionsAndRecyleBin"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "enabledValue": {
+                "decimal": {
+                    "value": 0
+                }
+            },
+            "disabledValue": {
+                "decimal": {
+                    "value": 1
+                }
+            },
+            "name": "L_DoNotPruneVersionsOverTime",
+            "displayName": "Do not prune versions over time",
+            "explainText":"This policy setting allows you to turn off OneNote's automatic pruning. With a 2016 format notebook, OneNote will automatically store previous versions of the pages in the notebook, and it will also store a recycle bin for all of the deleted pages and sections.\n\nIf you enable this policy setting, OneNote will not prune previous versions.\n\nIf you disable or do not configure this policy setting, OneNote will prune previous versions. The default value is to prune versions over time. You should only enable this policy setting if OneNote should not prune previous versions.",
+            "tags": [
+                "L_VersionsAndRecyleBin",
+                "L_OneNoteOptions",
+                "L_MicrosoftOfficeOneNote"
+            ],
+            "application": "onent16",
+            "key": "software\\microsoft\\office\\16.0\\onenote\\options\\versions",
+            "valueName": "pruneversionsovertime"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_VersionsAndRecyleBin"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "elements": {
+                "items": [
+                    {
+                        "valueName": "daysofallversions",
+                        "minValue": 0,
+                        "minValueSpecified": true,
+                        "maxValue": 365,
+                        "maxValueSpecified": true,
+                        "inputType": "decimalTextBox",
+                        "caption": "Days back",
+                        "id": "L_DaysOfAllVersionsSpinID"
+                    }
+                ]
+            },
+            "name": "L_DaysOfAllVersions",
+            "displayName": "Days all Version History items are \"safe\" from pruning",
+            "explainText": "This policy setting allows you to specify a period of time during which OneNote maintains comprehensive version history pages. After the time specified, OneNote maintains more basic version history pages, which uses less storage space.\n\nIf you enable this policy setting, OneNote maintains comprehensive version history pages for the length of time you specify, and then maintains basic version history pages once the time period expires.\n\nIf you disable or do not configure this policy setting, OneNote maintains comprehensive version hist

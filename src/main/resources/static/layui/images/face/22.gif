@@ -1,0 +1,247 @@
+\\16.0\\onenote\\options\\linkednotes",
+            "valueName": "autolink"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Other"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "enabledValue": {
+                "decimal": {
+                    "value": 1
+                }
+            },
+            "disabledValue": {
+                "decimal": {
+                    "value": 0
+                }
+            },
+            "name": "L_DisableOCR",
+            "displayName": "Disable OCR",
+            "explainText": "This policy turns off the OneNote image optical character recognition (OCR) feature. The OCR feature allows OneNote to automatically scan through images to find text that will appear in search results.",
+            "tags": [
+                "L_Other",
+                "L_OneNoteOptions",
+                "L_MicrosoftOfficeOneNote"
+            ],
+            "application": "onent16",
+            "key": "software\\microsoft\\office\\16.0\\onenote\\options\\other",
+            "valueName": "disableocr"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Other"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "elements": {
+                "items": [
+                    {
+                        "valueName": "blockedextensions",
+                        "requiredSpecified": false,
+                        "expandableSpecified": false,
+                        "maxLengthSpecified": false,
+                        "inputType": "textBox",
+                        "caption": "",
+                        "id": "L_empty12"
+                    }
+                ]
+            },
+            "name": "L_EmbeddedFilesBlockedExtensions",
+            "displayName": "Embedded Files Blocked Extensions",
+            "explainText": "To disable the ability of the users in your organization from being able to open a file attachment of a specific file type from a Microsoft OneNote page, add the extensions you want to disable using this format: \".ext1;.ext2;\" If you want to disable the opening of any attachment from a OneNote page, see the Disable embedded files policy. You cannot block embedded audio and video recordings (WMA & WMV) with this policy instead refer to the Disable embedded files policy.",
+            "tags": [
+                "L_Other",
+                "L_OneNoteOptions",
+                "L_MicrosoftOfficeOneNote"
+            ],
+            "application": "onent16",
+            "key": "software\\microsoft\\office\\16.0\\onenote\\options\\embeddedfileopenoptions"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Other"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "elements": {
+                "items": [
+                    {
+                        "valueName": "addnotebooks",
+                        "requiredSpecified": false,
+                        "expandableSpecified": false,
+                        "maxLengthSpecified": false,
+                        "inputType": "textBox",
+                        "caption": "",
+                        "id": "L_empty13"
+                    }
+                ]
+            },
+            "name": "L_Loadanotebookonfirstboot",
+            "displayName": "Load a notebook on first boot",
+            "explainText": "Points to a folder containing a notebook that should be loaded on first boot.",
+            "tags": [
+                "L_Other",
+                "L_OneNoteOptions",
+                "L_MicrosoftOfficeOneNote"
+            ],
+            "application": "onent16",
+            "key": "software\\microsoft\\office\\16.0\\onenote\\options\\other"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Other"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "enabledValue": {
+                "decimal": {
+                    "value": 1
+                }
+            },
+            "disabledValue": {
+                "decimal": {
+                    "value": 0
+                }
+            },
+            "name": "L_Disableembeddedfiles",
+            "displayName": "Disable embedded files",
+            "explainText": "To disable the ability to embed files on a OneNote page, so people cannot transmit files that might not be caught by anti-virus software, etc. Note: This policy will only limit embedded files in the OneNote UI, if a page has an embedded file OneNote will still sync and replicate the embedded files in the file system.",
+            "tags": [
+                "L_Other",
+                "L_OneNoteOptions",
+                "L_MicrosoftOfficeOneNote"
+            ],
+            "application": "onent16",
+            "key": "software\\microsoft\\office\\16.0\\onenote\\options",
+            "valueName": "disableembeddedfiles"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Other"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "enabledValue": {
+                "decimal": {
+                    "value": 1
+                }
+            },
+            "disabledValue": {
+                "decimal": {
+                    "value": 0
+                }
+            },
+            "name": "L_DisableOneNotescreenclippingnotifications",
+            "displayName": "Disable OneNote screen clipping notifications",
+            "explainText": "Turns off all of the OneNote screen clipping notifications.",
+            "tags": [
+                "L_Other",
+                "L_OneNoteOptions",
+                "L_MicrosoftOfficeOneNote"
+            ],
+            "application": "onent16",
+            "key": "software\\microsoft\\office\\16.0\\onenote\\options\\other",
+            "valueName": "disablescreenclippingballoon"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Other"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "enabledValue": {
+                "decimal": {
+                    "value": 1
+                }
+            },
+            "disabledValue": {
+                "decimal": {
+                    "value": 0
+                }
+            },
+            "name": "L_DisableOneNoteScreenClippings",
+            "displayName": "Disable OneNote Screen Clippings",
+            "explainText": "Disables the screen clipping feature in OneNote.",
+            "tags": [
+                "L_Other",
+                "L_OneNoteOptions",
+                "L_MicrosoftOfficeOneNote"
+            ],
+            "application": "onent16",
+            "key": "software\\microsoft\\office\\16.0\\onenote\\options\\other",
+            "valueName": "disablescreenclippings"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Other"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "elements": {
+                "items": [
+                    {
+                        "valueName": "inaccessibleserverdaysbeforewarn",
+                        "minValue": 0,
+                        "minValueSpecified": true,
+                        "maxValue": 30,
+                        "maxValueSpecified": true,
+                        "inputType": "decimalTextBox",
+                        "id": "L_empty14"
+                    }
+                ]
+            },
+            "name": "L_Numberofdaysbeforewarningthatserveris",
+            "displayName": "Number of days before warning that server is inaccessible",
+            "explainText": "Set the number of days until OneNote warns that the server is inaccessible and prompts for a new location for the affected files.",
+            "tags": [
+                "L_Other",
+                "L_OneNoteOptions",
+                "L_MicrosoftOfficeOneNote"
+            ],
+            "application": "onent16",
+            "key": "software\\microsoft\\office\\16.0\\onenote\\options\\synchronization"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Other"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "elements": {
+                "items": [
+                    {
+                        "valueName": "sharepointsyncinterval",
+                        "minValue": 10,
+                        "minValueSpecified": true,
+                        "maxValue": 604800,
+                        "maxValueSpecified": true,
+                        "inputType": "decimalTextBox",
+                        "id": "L_empty15"
+                    }
+                ]
+            },
+            "name": "L_SharePointsyncinterval",
+            "displayName": "SharePoint sync interval for notebooks stored on SharePoint",
+            "explainText": "Limits the number of times OneNote polls a SharePoint site for changes to a section. Enter the sync interval in seconds.",
+            "tags": [
+                "L_Other",
+                "L_OneNoteOptions",
+                "L_MicrosoftOfficeOneNote"
+            ],
+            "application": "onent16",
+            "key": "software\\microsoft\\office\\16.0\\onenote\\options\\save"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Other"
+           

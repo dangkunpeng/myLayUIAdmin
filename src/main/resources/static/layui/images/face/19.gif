@@ -1,0 +1,77 @@
+hich had a password set.",
+            "tags": [
+                "L_Password",
+                "L_OneNoteOptions",
+                "L_MicrosoftOfficeOneNote"
+            ],
+            "application": "onent16",
+            "key": "software\\microsoft\\office\\16.0\\onenote\\general",
+            "valueName": "passwordprotectiondisabled"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Password"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "enabledValue": {
+                "decimal": {
+                    "value": 1
+                }
+            },
+            "disabledValue": {
+                "decimal": {
+                    "value": 0
+                }
+            },
+            "name": "L_LockpasswordprotectedsectionsassoonasInavigateawayfromthem",
+            "displayName": "Lock password protected sections as soon as I navigate away from them",
+            "explainText": "OneNote supports password protecting sections and they are unlocked once a user types the password and can be locked again by either a timeout period or when you navigate away from the section. This option will lock the section once you navigate away from the password protected section.",
+            "tags": [
+                "L_Password",
+                "L_OneNoteOptions",
+                "L_MicrosoftOfficeOneNote"
+            ],
+            "application": "onent16",
+            "key": "software\\microsoft\\office\\16.0\\onenote\\security",
+            "valueName": "locksectionsimmediately"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Backup"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "elements": {
+                "items": [
+                    {
+                        "valueName": "backupnumberofbackupstokeep",
+                        "minValue": 0,
+                        "minValueSpecified": true,
+                        "maxValue": 1000,
+                        "maxValueSpecified": true,
+                        "inputType": "decimalTextBox",
+                        "caption": "Number of backup copies to keep",
+                        "id": "L_numberofbackupcopiestokeep2"
+                    }
+                ]
+            },
+            "name": "L_Numberofbackupcopiestokeep",
+            "displayName": "Number of backup copies to keep",
+            "explainText": "Sets the value in the corresponding UI option.",
+            "tags": [
+                "L_Backup",
+                "L_OneNoteOptions",
+                "L_MicrosoftOfficeOneNote"
+            ],
+            "application": "onent16",
+            "key": "software\\microsoft\\office\\16.0\\onenote\\options\\save"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_SendToOneNote"
+            },
+            "supportedOn": {
+          

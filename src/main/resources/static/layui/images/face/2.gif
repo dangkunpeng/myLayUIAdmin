@@ -1,0 +1,88 @@
+oftware\\microsoft\\office\\16.0\\onenote\\options\\outlookandweb",
+            "valueName": "disablesendemailtoonenote"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Addins"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "enabledValue": {
+                "decimal": {
+                    "value": 1
+                }
+            },
+            "disabledValue": {
+                "decimal": {
+                    "value": 0
+                }
+            },
+            "name": "L_DisableOneNoteCOMAPI",
+            "displayName": "Disable OneNote COM API",
+            "explainText": "Disable OneNote COM API - this disables add-on applications that may use the COM API. Note that it also breaks other features that use this API such as sending information from Outlook to OneNote.",
+            "tags": [
+                "L_Addins",
+                "L_OneNoteOptions",
+                "L_MicrosoftOfficeOneNote"
+            ],
+            "application": "onent16",
+            "key": "software\\microsoft\\office\\16.0\\onenote\\security",
+            "valueName": "disablecomapi"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Addins"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "enabledValue": {
+                "decimal": {
+                    "value": 1
+                }
+            },
+            "disabledValue": {
+                "decimal": {
+                    "value": 0
+                }
+            },
+            "name": "L_DisableinstalledOneNoteaddins",
+            "displayName": "Disable installed OneNote Add-ins",
+            "explainText": "Turns off all of the installed OneNote Add-ins.",
+            "tags": [
+                "L_Addins",
+                "L_OneNoteOptions",
+                "L_MicrosoftOfficeOneNote"
+            ],
+            "application": "onent16",
+            "key": "software\\microsoft\\office\\16.0\\onenote\\security",
+            "valueName": "disablealladdins"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Spelling"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "elements": {
+                "items": [
+                    {
+                        "item": [
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 0
+                                    }
+                                },
+                                "displayName": "no spell checking"
+                            },
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 1
+                                    }
+                                },
+                                "displayName": "check spelling as you type"
+                          

@@ -1,0 +1,134 @@
+       "explainText": "This policy setting controls the sharing recommendation feature.\n\nIf you enable this policy setting, the recommendation will be turned off.\n\nIf you disable or do not configure this policy setting, the recommendation will be turned on.",
+            "tags": [
+                "L_ScheduleView",
+                "L_Calendaroptions",
+                "L_Preferences",
+                "L_OutlookOptions",
+                "L_MicrosoftOfficeOutlook"
+            ],
+            "application": "outlk16",
+            "key": "software\\microsoft\\office\\16.0\\outlook\\options\\calendar",
+            "valueName": "disablesharingrecommendationui"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_ScheduleView"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "enabledValue": {
+                "decimal": {
+                    "value": 1
+                }
+            },
+            "disabledValue": {
+                "decimal": {
+                    "value": 0
+                }
+            },
+            "name": "L_TurnOffLegacyGroupCalendarMigration",
+            "displayName": "Turn off Legacy Group Calendar migration",
+            "explainText": "This policy setting controls the migration of legacy Group Calendar.\n\nIf you enable this policy setting, migration will be turned off.\n\nIf you disable or do not configure this policy setting, migration will be turned on.",
+            "tags": [
+                "L_ScheduleView",
+                "L_Calendaroptions",
+                "L_Preferences",
+                "L_OutlookOptions",
+                "L_MicrosoftOfficeOutlook"
+            ],
+            "application": "outlk16",
+            "key": "software\\microsoft\\office\\16.0\\outlook\\options\\wunderbar",
+            "valueName": "disablelegacygroupcalendar"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Calendaroptions"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "elements": {
+                "items": [
+                    {
+                        "item": [
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 32768
+                                    }
+                                },
+                                "displayName": "Prevent Calendar Sharing"
+                            },
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 16384
+                                    }
+                                },
+                                "displayName":"Allow calendar sharing with 'Availability Only' detail level"
+                            },
+                            {
+                                "value": {
+                                    "decimal": {
+                                        "value": 8192
+                                    }
+                                },
+                                "displayName":"Allow calendar sharing with 'Availability Only' and 'Limited Details' detail level"
+                            }
+                        ],
+                        "valueName": "payloadcalendardetailspolicy",
+                        "inputType": "dropdownList",
+                        "caption": "Control Calendar Sharing",
+                        "id": "L_controlcalendarsharing5"
+                    }
+                ]
+            },
+            "name": "L_ControlCalendarSharing",
+            "displayName": "Control Calendar Sharing",
+            "explainText": "By default, users can share an entire calendar by saving it in the iCalendar format, or share a snapshot of a calendar by using e-mail. This setting allows you to specify the detail level in the shared versions of calendars, or to disable sharing of calendars.",
+            "tags": [
+                "L_Calendaroptions",
+                "L_Preferences",
+                "L_OutlookOptions",
+                "L_MicrosoftOfficeOutlook"
+            ],
+            "application": "outlk16",
+            "key": "software\\microsoft\\office\\16.0\\outlook\\options\\calendar"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Calendaroptions"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "enabledValue": {
+                "decimal": {
+                    "value": 1
+                }
+            },
+            "disabledValue": {
+                "decimal": {
+                    "value": 0
+                }
+            },
+            "name": "L_Includeappointmentsonlywithinworkinghours",
+            "displayName": "Include appointments only within working hours",
+            "explainText":"By default, all appointments in a calendar are included when that calendar is shared through e-mail or by using the Office.com Sharing Service. This setting allows users to publish only appointments that are within users' working hours.",
+            "tags": [
+                "L_Calendaroptions",
+                "L_Preferences",
+                "L_OutlookOptions",
+                "L_MicrosoftOfficeOutlook"
+            ],
+            "application": "outlk16",
+            "key": "software\\microsoft\\office\\16.0\\outlook\\options\\pubcal",
+            "valueName": "showworkinghoursonly"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_Calendaroptions"
+            },
+            "supportedOn": {
+                "ref": "

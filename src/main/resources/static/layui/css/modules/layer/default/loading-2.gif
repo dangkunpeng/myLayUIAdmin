@@ -1,0 +1,31 @@
+and users cannot change this configuration.\n\nIf you do not configure this policy setting, e-mail messages that are received from people who are listed in Contacts are considered safe by the Junk E-mail Filter, but users can change this configuration.",
+            "tags": [
+                "L_JunkEmail",
+                "L_Preferences",
+                "L_OutlookOptions",
+                "L_MicrosoftOfficeOutlook"
+            ],
+            "application": "outlk16",
+            "key": "software\\microsoft\\office\\16.0\\outlook\\options\\mail",
+            "valueName": "junkmailtrustcontacts"
+        },
+        {
+            "parentCategory": {
+                "ref": "L_JunkEmail"
+            },
+            "supportedOn": {
+                "ref": "windows:SUPPORTED_Windows7"
+            },
+            "enabledValue": {
+                "decimal": {
+                    "value": 1
+                }
+            },
+            "disabledValue": {
+                "decimal": {
+                    "value": 0
+                }
+            },
+            "name": "L_AddpeopleIemailtotheSafeSendersList",
+            "displayName":"Add e-mail recipients to users' Safe Senders Lists",
+            "explainText":"This policy setting controls whether recipients' e-mail addresses are automatically added to the user's Safe Senders List in Microsoft Outlook. Sometimes users will send e-mail messages to request that they be taken off a mailing list. If the e-mail recipient is then automatically added to the Safe Senders List, future e-mail messages from that address will no longer be sent to the users Junk E-mail folder, even if it would otherwise be considered junk.\n\nIf you enable this policy setting, all recipients of outgoing messages are aut
